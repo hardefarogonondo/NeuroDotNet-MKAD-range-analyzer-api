@@ -1,0 +1,64 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 432-568-304
+INFO:root:The address 'Red Square, Moscow' is inside the MKAD.
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 00:47:34] "POST /distance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Personal\\Projects\\Software\\NeuroDotNet-MKAD-range-analyzer-api\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 432-568-304
+INFO:root:The address 'Red Square, Moscow' is 820.43 km away from the MKAD.
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 00:47:54] "POST /distance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Personal\\Projects\\Software\\NeuroDotNet-MKAD-range-analyzer-api\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 432-568-304
+INFO:werkzeug: * Detected change in 'D:\\Personal\\Projects\\Software\\NeuroDotNet-MKAD-range-analyzer-api\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 432-568-304
+INFO:root:The address '56.90415423821526, 24.161043293273217' is 820.43 km away from the MKAD.
+INFO:root:The address 'Red Square, Moscow' is inside the MKAD.
+ERROR:root:Could not retrieve valid coordinates for address: Invalid Address
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+ERROR:root:Failed to get coordinates for address: Red Square, Moscow
+ERROR:root:Could not retrieve valid coordinates for address: Red Square, Moscow
+INFO:root:The address 'Red Square, Moscow' is inside the MKAD.
