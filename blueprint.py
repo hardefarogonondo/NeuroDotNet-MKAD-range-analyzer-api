@@ -16,7 +16,7 @@ def API_limit_checker() -> tuple[bool, str]:
     if datetime.now() - API_HIT_START_TIME > timedelta(days=1):
         API_HIT_COUNTER = 0
         API_HIT_START_TIME = datetime.now()
-    if API_HIT_COUNTER >= 20000:
+    if API_HIT_COUNTER >= 20:
         return False, "API limit reached for the day"
     API_HIT_COUNTER += 1
     return True, ""
@@ -24,7 +24,7 @@ def API_limit_checker() -> tuple[bool, str]:
 
 def get_coordinates(address: str, use_test_data=False) -> tuple:
     if use_test_data:
-        return 55.7522, 37.6156
+        return 55.7522, 37.6156, "exact"
     base_url = 'https://geocode-maps.yandex.ru/1.x/'
     params = {
         "apikey": YANDEX_API_KEY,
@@ -33,13 +33,15 @@ def get_coordinates(address: str, use_test_data=False) -> tuple:
     }
     response = requests.get(base_url, params=params)
     try:
-        coords = response.json()[
-            "response"]["GeoObjectCollection"]["featureMember"][0]["GeoObject"]["Point"]["pos"]
+        geo_object = response.json()[
+            "response"]["GeoObjectCollection"]["featureMember"][0]["GeoObject"]
+        coords = geo_object["Point"]["pos"]
+        precision = geo_object["metaDataProperty"]["GeocoderMetaData"]["precision"]
         lon, lat = map(float, coords.split())
-        return lat, lon
+        return lat, lon, precision
     except (KeyError, IndexError, ValueError):
         logging.error(f"Failed to get coordinates for address: {address}")
-        return None, None
+        return None, None, None
 
 
 def haversine_distance(point1: tuple, point2: tuple) -> float:
@@ -68,7 +70,11 @@ def get_distance():
     address = request.json.get("address")
     if not address:
         return jsonify({"error": "No address provided"}), 400
-    lat, lon = get_coordinates(address)
+    lat, lon, precision = get_coordinates(address)
+    # Uncomment this line below for manual testing purpose
+    # lat, lon, precision = get_coordinates(address, use_test_data=True)
+    if precision == "other":
+        return jsonify({"error": "The address provided is too vague."}), 400
     if lat is None or lon is None:
         logging.error(
             f"Could not retrieve valid coordinates for address: {address}")
