@@ -1,5 +1,5 @@
 LOGGING_CONFIG = {
-    "filename": 'log/app.log',
+    "filename": '/app/log/app.log',
     "level": 20  # Value for logging.INFO
 }
 MKAD_CENTER = (55.75582620953044, 37.61730126651572)
