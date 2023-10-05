@@ -1,0 +1,7 @@
+LOGGING_CONFIG = {
+    "filename": 'log/app.log',
+    "level": 'logging.INFO'
+}
+MKAD_CENTER = (55.75582620953044, 37.61730126651572)
+MKAD_RADIUS = 17.475
+YANDEX_API_KEY = "YOUR_API_KEY_HERE"
